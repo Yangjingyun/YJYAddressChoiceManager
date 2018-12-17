@@ -106,7 +106,7 @@ class AddressChoiceView: UIView {
     }
     
     func lineAnimation(num:Int) {
-        let lineW = ((ScreenW - 30.0)/4.0)
+        let lineW = ((self.frame.size.width - 30.0)/4.0)
         let lineX = lineW+(lineW + 10.0) * CGFloat(self.currIndex) - lineW/2.0 - 25.0
         UIView.animate(withDuration: 0.2) {
             self.lineView.frame = CGRect(x: lineX, y: 140.0, width: 50.0, height: 2.0)
